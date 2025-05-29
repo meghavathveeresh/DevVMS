@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-              git branch: 'main', credentialsId: 'GITHUB', url: 'https://github.com/meghavathveeresh/VEERESH-123.git'
-            }
+               git branch: 'main', credentialsId: 'AMDN', url: 'https://github.com/meghavathveeresh/DevVMS.git'            }
         }
           stage('Build') {
             steps {
