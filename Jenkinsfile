@@ -19,7 +19,7 @@ pipeline {
         }
 		stage('deploy') {
             steps {
-             deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'AMDN', path: '', url: 'http://localhost:8080/')], contextPath: 'veeresh123', war: 'target/*.war'
+            deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'AMDN', path: '', url: 'http://localhost:8080/')], contextPath: 'DEV VMS', war: 'target/*.war'
             }
         }
     }
